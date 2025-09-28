@@ -1,0 +1,180 @@
+/* Horizontal navigation layout for feedback page */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+/* Horizontal navigation bar */
+.navbar {
+    background-color: #1e3a8a; /* Dark blue */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar nav a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Add separators between nav items */
+.navbar nav a:not(:last-child)::after {
+    content: "|";
+    color: white;
+    margin-left: 20px;
+    opacity: 0.7;
+}
+
+/* Main content area */
+.main-content {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Page heading */
+.page-heading {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Feedback form container */
+.feedback-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1e3a8a;
+    background-color: white;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-send {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-send:hover {
+    background-color: #218838;
+}
+
+.btn-clear {
+    background-color: #dc2626;
+    color: white;
+}
+
+.btn-clear:hover {
+    background-color: #b91c1c;
+}
+
+/* Footer */
+.footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar nav {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    
+    .navbar nav a {
+        margin: 5px;
+        padding: 8px 15px;
+    }
+    
+    .navbar nav a:not(:last-child)::after {
+        display: none;
+    }
+    
+    .main-content {
+        padding: 20px 10px;
+    }
+    
+    .feedback-container {
+        padding: 20px;
+    }
+}

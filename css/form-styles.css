@@ -1,0 +1,73 @@
+/* Form styling for consistent appearance across all forms */
+
+/* Input field styles */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    background-color: #f0f8ff;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px 0;
+    width: 200px;
+}
+
+/* Form container styling */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Textarea styling */
+textarea {
+    background-color: #f0f8ff;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px 0;
+    width: 100%;
+    resize: vertical;
+}
+
+/* Select dropdown styling */
+select {
+    background-color: #f0f8ff;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px 0;
+    width: 200px;
+}
+
+/* Radio button and checkbox styling */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}

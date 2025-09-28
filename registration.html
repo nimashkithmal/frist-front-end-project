@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/horizontal-nav.css">
+    <link rel="stylesheet" href="css/form-styles.css">
+</head>
+<body>
+    <!-- Horizontal Navigation Bar -->
+    <div class="navbar">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="registration.html" class="active">Registration</a>
+            <a href="login.html">Login</a>
+            <a href="categories.html">Categories</a>
+            <a href="shoppinglist.html">Shopping List</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="product-registration.html">Products</a>
+        </nav>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1 class="page-heading">User Registration</h1>
+        <h3>Already registered? Click <a href="login.html">here</a> to login.</h3>
+    
+    <!-- Registration Form -->
+    <form action="#" method="POST">
+        <!-- Name field -->
+        <p>
+            <label for="name">Enter Your Name:</label><br/>
+            <input type="text" id="name" name="name">
+        </p>
+
+        <!-- UserID field -->
+        <p>
+            <label for="userId">UserName:</label><br/>
+            <input type="text" id="userId" name="userId">
+        </p>
+
+        <!-- Password field -->
+        <p>
+            <label for="password">Password:</label><br/>
+            <input type="password" id="password" name="password">
+        </p>
+
+        <!-- Email field -->
+        <p>
+            <label for="email">Email Address:</label><br/>
+            <input type="email" id="email" name="email">
+        </p>
+
+        <!-- Address textarea -->
+        <p>
+            <label for="address">Correspondence Address:</label><br/>
+            <textarea id="address" name="address" rows="5" cols="30"></textarea>
+        </p>
+
+        <!-- Gender radio buttons -->
+        <p>
+            <label>Gender:</label><br/>
+            <input type="radio" id="Male" name="gender" value="Male">
+            <label for="Male">Male</label><br/>
+            <input type="radio" id="Female" name="gender" value="Female">
+            <label for="Female">Female</label>
+        </p>
+
+        
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+    
+    
+    </div>
+    
+    <footer class="footer">
+        © A.J.S.D Java Developer, 2150
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

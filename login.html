@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Shopping Website</title>
+    <link rel="stylesheet" href="css/horizontal-nav.css">
+    <link rel="stylesheet" href="css/form-styles.css">
+</head>
+<body>
+    <!-- Horizontal Navigation Bar -->
+    <div class="navbar">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="registration.html">Registration</a>
+            <a href="login.html" class="active">Login</a>
+            <a href="categories.html">Categories</a>
+            <a href="shoppinglist.html">Shopping List</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="product-registration.html">Products</a>
+        </nav>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1 class="page-heading">Login</h1>
+        <h3>Not registered? Click <a href="registration.html">here</a> to register.</h3>
+        
+        <div class="feedback-container">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username"  required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"  required>
+                </div>
+                
+                <div class="button-container">
+                    <button type="submit" class="btn btn-send">Login</button>
+                    <button type="reset" class="btn btn-clear">Clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        © A.J.S.D Java Developer, 2150
+    </footer>
+</body>
+</html>

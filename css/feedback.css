@@ -1,0 +1,104 @@
+/* Feedback form styling with Flexbox layout and animations */
+
+/* Form container with Flexbox */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Button container with horizontal alignment */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Button styling */
+.submit-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+.clear-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.clear-button:hover {
+    background-color: #8B0000;
+}
+
+/* Slide-in animation keyframes */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Apply animation to form */
+form {
+    animation: slideIn 0.8s ease-out;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .flex-container {
+        margin: 10px;
+        padding: 15px;
+    }
+}
