@@ -1,0 +1,14 @@
+Option 1: Using Python (recommended)
+Open Terminal
+Navigate to the project folder:
+   cd /Users/nimashkithmal/Desktop/shopping
+Start the server:
+   python3 -m http.server 8000
+Open your browser and go to:
+   http://localhost:8000
+
+   
+Option 2: Using Node.js (if you have it installed)
+npx http-server -p 8000
+Option 3: Using PHP (if you have it installed)
+php -S localhost:8000
